@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,8 +18,8 @@
 		AA6F3E1D2678D347002FEA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6F3E1B2678D347002FEA50 /* LaunchScreen.storyboard */; };
 		AA6F3E282678D347002FEA50 /* SwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F3E272678D347002FEA50 /* SwiftStudyTests.swift */; };
 		AA6F3E332678D347002FEA50 /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F3E322678D347002FEA50 /* SwiftStudyUITests.swift */; };
-		AA6F3E442678D3BA002FEA50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F3E422678D3BA002FEA50 /* MainViewController.swift */; };
-		AA6F3E452678D3BA002FEA50 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6F3E432678D3BA002FEA50 /* MainViewController.xib */; };
+		AA6F3E442678D3BA002FEA50 /* TestFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F3E422678D3BA002FEA50 /* TestFieldVC.swift */; };
+		AA6F3E452678D3BA002FEA50 /* TestFieldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6F3E432678D3BA002FEA50 /* TestFieldVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		AA6F3E2E2678D347002FEA50 /* SwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6F3E322678D347002FEA50 /* SwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITests.swift; sourceTree = "<group>"; };
 		AA6F3E342678D347002FEA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA6F3E422678D3BA002FEA50 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		AA6F3E432678D3BA002FEA50 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		AA6F3E422678D3BA002FEA50 /* TestFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFieldVC.swift; sourceTree = "<group>"; };
+		AA6F3E432678D3BA002FEA50 /* TestFieldVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestFieldVC.xib; sourceTree = "<group>"; };
 		D8A39861821F984254C11111 /* Pods_SwiftStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD24FDD65C505562EA270F2D /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		EB7C4892C347932ED5A0B756 /* Pods-SwiftStudy-SwiftStudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy-SwiftStudyUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy-SwiftStudyUITests/Pods-SwiftStudy-SwiftStudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,18 +153,18 @@
 		AA6F3E402678D3A3002FEA50 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				AA6F3E412678D3AA002FEA50 /* Main */,
+				AA6F3E412678D3AA002FEA50 /* TestField */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		AA6F3E412678D3AA002FEA50 /* Main */ = {
+		AA6F3E412678D3AA002FEA50 /* TestField */ = {
 			isa = PBXGroup;
 			children = (
-				AA6F3E422678D3BA002FEA50 /* MainViewController.swift */,
-				AA6F3E432678D3BA002FEA50 /* MainViewController.xib */,
+				AA6F3E422678D3BA002FEA50 /* TestFieldVC.swift */,
+				AA6F3E432678D3BA002FEA50 /* TestFieldVC.xib */,
 			);
-			path = Main;
+			path = TestField;
 			sourceTree = "<group>";
 		};
 		C5D87590A547C1D3EA614E6D /* Pods */ = {
@@ -177,7 +177,6 @@
 				281DE0DCF89DA93121DDBCDE /* Pods-SwiftStudyTests.debug.xcconfig */,
 				3F941B110800032ABE50C9CC /* Pods-SwiftStudyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -300,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA6F3E1D2678D347002FEA50 /* LaunchScreen.storyboard in Resources */,
-				AA6F3E452678D3BA002FEA50 /* MainViewController.xib in Resources */,
+				AA6F3E452678D3BA002FEA50 /* TestFieldVC.xib in Resources */,
 				AA6F3E1A2678D347002FEA50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +432,7 @@
 				AA6F3E182678D346002FEA50 /* SwiftStudy.xcdatamodeld in Sources */,
 				AA6F3E0E2678D346002FEA50 /* AppDelegate.swift in Sources */,
 				AA6F3E102678D346002FEA50 /* SceneDelegate.swift in Sources */,
-				AA6F3E442678D3BA002FEA50 /* MainViewController.swift in Sources */,
+				AA6F3E442678D3BA002FEA50 /* TestFieldVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

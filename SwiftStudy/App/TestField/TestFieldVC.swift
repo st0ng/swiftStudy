@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class TestFieldVC: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var buttonBottomConstraints: NSLayoutConstraint!
@@ -85,7 +85,7 @@ class MainViewController: UIViewController {
 }
 
 
-extension MainViewController: UITextFieldDelegate {
+extension TestFieldVC: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         /*

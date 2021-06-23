@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         // 뿌리 뷰컨트롤러를 위에서 설정한 네이게이션 컨트롤러로 설정
-        window?.rootViewController = MainViewController()
+        window?.rootViewController = TestFieldVC()
         
         // 설정한 윈도우를 보이게 끔 설정
         window?.makeKeyAndVisible()
