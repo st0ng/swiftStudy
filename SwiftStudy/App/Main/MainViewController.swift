@@ -12,34 +12,29 @@
 
 import UIKit
 
-protocol MainDisplayLogic: class
-{
+protocol MainDisplayLogic: class {
   func displaySomething(viewModel: Main.Something.ViewModel)
 }
 
-class MainViewController: UIViewController, MainDisplayLogic
-{
+class MainViewController: UIViewController, MainDisplayLogic {
   var interactor: MainBusinessLogic?
   var router: (NSObjectProtocol & MainRoutingLogic & MainDataPassing)?
 
   // MARK: Object lifecycle
   
-  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-  {
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     setup()
   }
   
-  required init?(coder aDecoder: NSCoder)
-  {
+  required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     setup()
   }
   
   // MARK: Setup
   
-  private func setup()
-  {
+  private func setup() {
     let viewController = self
     let interactor = MainInteractor()
     let presenter = MainPresenter()
@@ -54,8 +49,7 @@ class MainViewController: UIViewController, MainDisplayLogic
   
   // MARK: Routing
   
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-  {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let scene = segue.identifier {
       let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
       if let router = router, router.responds(to: selector) {
@@ -66,24 +60,30 @@ class MainViewController: UIViewController, MainDisplayLogic
   
   // MARK: View lifecycle
   
-  override func viewDidLoad()
-  {
+  override func viewDidLoad() {
     super.viewDidLoad()
-    doSomething()
+    self.navigationController?.setNavigationBarHidden(true, animated: false)
   }
   
   // MARK: Do something
-  
-  //@IBOutlet weak var nameTextField: UITextField!
-  
-  func doSomething()
-  {
-    let request = Main.Something.Request()
-    interactor?.doSomething(request: request)
+  func doSomething() {
+   
   }
   
-  func displaySomething(viewModel: Main.Something.ViewModel)
-  {
-    //nameTextField.text = viewModel.name
+  func displaySomething(viewModel: Main.Something.ViewModel) {
+    
   }
+    
+    // MARK: 버튼 - onClickButton
+    @IBAction func moveToSceneDelegate(_ sender: Any) {
+        let page = TextFieldVC()
+        self.navigationController?.pushViewController(page, animated: true)
+    }
+    
+    @IBAction func moveToScrollView(_ sender: Any) {
+        let page = ScrollVC1()
+        self.navigationController?.pushViewController(page, animated: true)
+//        self.present(page, animated: false)
+    }
+    
 }

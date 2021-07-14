@@ -10,9 +10,17 @@
 		16AB4BF44389CFE18C60E056 /* Pods_SwiftStudy_SwiftStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB937FA052768BC8F6DE8E3 /* Pods_SwiftStudy_SwiftStudyUITests.framework */; };
 		3601D0A645728634A07D334B /* Pods_SwiftStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A39861821F984254C11111 /* Pods_SwiftStudyTests.framework */; };
 		5F447055503C17FDE4E6EBFF /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F155BF52D30F976D2E9571D /* Pods_SwiftStudy.framework */; };
+		AA2C758E269F09DD0095698F /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C7588269F09DD0095698F /* MainPresenter.swift */; };
+		AA2C758F269F09DD0095698F /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C7589269F09DD0095698F /* MainWorker.swift */; };
+		AA2C7590269F09DD0095698F /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C758A269F09DD0095698F /* MainRouter.swift */; };
+		AA2C7591269F09DD0095698F /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C758B269F09DD0095698F /* MainModels.swift */; };
+		AA2C7592269F09DD0095698F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C758C269F09DD0095698F /* MainViewController.swift */; };
+		AA2C7593269F09DD0095698F /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C758D269F09DD0095698F /* MainInteractor.swift */; };
+		AA2C7595269F0A470095698F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2C7594269F0A470095698F /* MainViewController.xib */; };
+		AA2C7598269F2C970095698F /* ScrollVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2C7596269F2C970095698F /* ScrollVC3.swift */; };
+		AA2C7599269F2C970095698F /* ScrollVC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2C7597269F2C970095698F /* ScrollVC3.xib */; };
 		AA6F3E0E2678D346002FEA50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F3E0D2678D346002FEA50 /* AppDelegate.swift */; };
 		AA6F3E102678D346002FEA50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F3E0F2678D346002FEA50 /* SceneDelegate.swift */; };
-		AA6F3E122678D346002FEA50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F3E112678D346002FEA50 /* ViewController.swift */; };
 		AA6F3E182678D346002FEA50 /* SwiftStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA6F3E162678D346002FEA50 /* SwiftStudy.xcdatamodeld */; };
 		AA6F3E1A2678D347002FEA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6F3E192678D347002FEA50 /* Assets.xcassets */; };
 		AA6F3E1D2678D347002FEA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6F3E1B2678D347002FEA50 /* LaunchScreen.storyboard */; };
@@ -24,6 +32,7 @@
 		AACB7172268B4FBC00CADF6B /* ScrollVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACB7170268B4FBC00CADF6B /* ScrollVC1.xib */; };
 		AACB7175268B5A6800CADF6B /* ScrollVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7173268B5A6800CADF6B /* ScrollVC2.swift */; };
 		AACB7176268B5A6800CADF6B /* ScrollVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACB7174268B5A6800CADF6B /* ScrollVC2.xib */; };
+		AACB7179268B6D7F00CADF6B /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7178268B6D7F00CADF6B /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +59,18 @@
 		3F941B110800032ABE50C9CC /* Pods-SwiftStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudyTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudyTests/Pods-SwiftStudyTests.release.xcconfig"; sourceTree = "<group>"; };
 		66F78063F3504DDC678F7735 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		87F222C23A869C696C9ED819 /* Pods-SwiftStudy-SwiftStudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy-SwiftStudyUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy-SwiftStudyUITests/Pods-SwiftStudy-SwiftStudyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AA2C7588269F09DD0095698F /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		AA2C7589269F09DD0095698F /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
+		AA2C758A269F09DD0095698F /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		AA2C758B269F09DD0095698F /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		AA2C758C269F09DD0095698F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AA2C758D269F09DD0095698F /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		AA2C7594269F0A470095698F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		AA2C7596269F2C970095698F /* ScrollVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC3.swift; sourceTree = "<group>"; };
+		AA2C7597269F2C970095698F /* ScrollVC3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollVC3.xib; sourceTree = "<group>"; };
 		AA6F3E0A2678D346002FEA50 /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6F3E0D2678D346002FEA50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA6F3E0F2678D346002FEA50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA6F3E112678D346002FEA50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA6F3E172678D346002FEA50 /* SwiftStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftStudy.xcdatamodel; sourceTree = "<group>"; };
 		AA6F3E192678D347002FEA50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA6F3E1C2678D347002FEA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +87,7 @@
 		AACB7170268B4FBC00CADF6B /* ScrollVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollVC1.xib; sourceTree = "<group>"; };
 		AACB7173268B5A6800CADF6B /* ScrollVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC2.swift; sourceTree = "<group>"; };
 		AACB7174268B5A6800CADF6B /* ScrollVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollVC2.xib; sourceTree = "<group>"; };
+		AACB7178268B6D7F00CADF6B /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		D8A39861821F984254C11111 /* Pods_SwiftStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD24FDD65C505562EA270F2D /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		EB7C4892C347932ED5A0B756 /* Pods-SwiftStudy-SwiftStudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy-SwiftStudyUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy-SwiftStudyUITests/Pods-SwiftStudy-SwiftStudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +121,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA2C757B269F09A30095698F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA2C758D269F09DD0095698F /* MainInteractor.swift */,
+				AA2C758B269F09DD0095698F /* MainModels.swift */,
+				AA2C7588269F09DD0095698F /* MainPresenter.swift */,
+				AA2C758A269F09DD0095698F /* MainRouter.swift */,
+				AA2C758C269F09DD0095698F /* MainViewController.swift */,
+				AA2C7594269F0A470095698F /* MainViewController.xib */,
+				AA2C7589269F09DD0095698F /* MainWorker.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		AA6F3E012678D346002FEA50 = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +163,6 @@
 				AA6F3E402678D3A3002FEA50 /* App */,
 				AA6F3E0D2678D346002FEA50 /* AppDelegate.swift */,
 				AA6F3E0F2678D346002FEA50 /* SceneDelegate.swift */,
-				AA6F3E112678D346002FEA50 /* ViewController.swift */,
 				AA6F3E192678D347002FEA50 /* Assets.xcassets */,
 				AA6F3E1B2678D347002FEA50 /* LaunchScreen.storyboard */,
 				AA6F3E1E2678D347002FEA50 /* Info.plist */,
@@ -161,6 +192,8 @@
 		AA6F3E402678D3A3002FEA50 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				AA2C757B269F09A30095698F /* Main */,
+				AACB7177268B6D1A00CADF6B /* Util */,
 				AACB716D268B4A8B00CADF6B /* ScrollView */,
 				AA6F3E412678D3AA002FEA50 /* TextField */,
 			);
@@ -183,8 +216,18 @@
 				AACB7170268B4FBC00CADF6B /* ScrollVC1.xib */,
 				AACB7173268B5A6800CADF6B /* ScrollVC2.swift */,
 				AACB7174268B5A6800CADF6B /* ScrollVC2.xib */,
+				AA2C7596269F2C970095698F /* ScrollVC3.swift */,
+				AA2C7597269F2C970095698F /* ScrollVC3.xib */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		AACB7177268B6D1A00CADF6B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AACB7178268B6D7F00CADF6B /* UserDefaultsManager.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		C5D87590A547C1D3EA614E6D /* Pods */ = {
@@ -319,9 +362,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA6F3E1D2678D347002FEA50 /* LaunchScreen.storyboard in Resources */,
+				AA2C7595269F0A470095698F /* MainViewController.xib in Resources */,
 				AACB7176268B5A6800CADF6B /* ScrollVC2.xib in Resources */,
 				AA6F3E452678D3BA002FEA50 /* TextFieldVC.xib in Resources */,
 				AA6F3E1A2678D347002FEA50 /* Assets.xcassets in Resources */,
+				AA2C7599269F2C970095698F /* ScrollVC3.xib in Resources */,
 				AACB7172268B4FBC00CADF6B /* ScrollVC1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,13 +495,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA6F3E122678D346002FEA50 /* ViewController.swift in Sources */,
 				AA6F3E182678D346002FEA50 /* SwiftStudy.xcdatamodeld in Sources */,
 				AA6F3E0E2678D346002FEA50 /* AppDelegate.swift in Sources */,
 				AA6F3E102678D346002FEA50 /* SceneDelegate.swift in Sources */,
+				AA2C7592269F09DD0095698F /* MainViewController.swift in Sources */,
+				AA2C758E269F09DD0095698F /* MainPresenter.swift in Sources */,
+				AA2C758F269F09DD0095698F /* MainWorker.swift in Sources */,
+				AA2C7590269F09DD0095698F /* MainRouter.swift in Sources */,
 				AA6F3E442678D3BA002FEA50 /* TextFieldVC.swift in Sources */,
 				AACB7171268B4FBC00CADF6B /* ScrollVC1.swift in Sources */,
+				AA2C7598269F2C970095698F /* ScrollVC3.swift in Sources */,
+				AACB7179268B6D7F00CADF6B /* UserDefaultsManager.swift in Sources */,
+				AA2C7591269F09DD0095698F /* MainModels.swift in Sources */,
 				AACB7175268B5A6800CADF6B /* ScrollVC2.swift in Sources */,
+				AA2C7593269F09DD0095698F /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

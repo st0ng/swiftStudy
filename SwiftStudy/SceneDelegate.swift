@@ -21,8 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // 윈도우의 크기 설정
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        let page = MainViewController()
+        
         // 뿌리 뷰컨트롤러를 위에서 설정한 네이게이션 컨트롤러로 설정
-        window?.rootViewController = ScrollVC1()
+        window?.rootViewController = UINavigationController(rootViewController: page)
         
         // 설정한 윈도우를 보이게 끔 설정
         window?.makeKeyAndVisible()

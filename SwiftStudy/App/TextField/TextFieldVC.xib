@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldVC" customModule="SwiftStudy" customModuleProvider="target">
             <connections>
+                <outlet property="button" destination="Ek4-7B-FAR" id="XP6-dy-O2o"/>
                 <outlet property="buttonBottomConstraints" destination="SLg-nb-sQu" id="6Og-Hn-d0f"/>
                 <outlet property="textField" destination="3UP-Uo-iZd" id="Avf-B9-xjZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
