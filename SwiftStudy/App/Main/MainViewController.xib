@@ -27,7 +27,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EgT-qJ-Fdz">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-98-mvd" userLabel="SceneDelegateView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-98-mvd" userLabel="TextField">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJ2-cF-lYJ" userLabel="딜리게이트">
@@ -47,7 +47,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="BJ2-cF-lYJ" secondAttribute="trailing" id="xzA-mg-o22"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hk4-cL-dSb" userLabel="buttonView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hk4-cL-dSb" userLabel="ScrollView">
                                             <rect key="frame" x="0.0" y="60" width="414" height="60"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvB-RH-6wZ" userLabel="Button">
@@ -67,12 +67,15 @@
                                                 <constraint firstItem="wvB-RH-6wZ" firstAttribute="leading" secondItem="Hk4-cL-dSb" secondAttribute="leading" id="bdh-i8-6GZ"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quT-EI-4uD" userLabel="buttonView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quT-EI-4uD" userLabel="RxSwift">
                                             <rect key="frame" x="0.0" y="120" width="414" height="60"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNz-d6-JbK" userLabel="Button">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                                    <state key="normal" title="버튼"/>
+                                                    <state key="normal" title="Rxswift"/>
+                                                    <connections>
+                                                        <action selector="moveToRxSwift:" destination="-1" eventType="touchUpInside" id="pFr-V2-rIf"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -84,12 +87,15 @@
                                                 <constraint firstItem="lNz-d6-JbK" firstAttribute="leading" secondItem="quT-EI-4uD" secondAttribute="leading" id="hwk-zS-9jm"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wga-mw-Hpl" userLabel="buttonView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wga-mw-Hpl" userLabel="Timer">
                                             <rect key="frame" x="0.0" y="180" width="414" height="60"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaT-qD-E3E" userLabel="Button">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                                    <state key="normal" title="버튼"/>
+                                                    <state key="normal" title="Timer"/>
+                                                    <connections>
+                                                        <action selector="moveToTimerViewController:" destination="-1" eventType="touchUpInside" id="J6i-WC-Dfx"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,12 +107,15 @@
                                                 <constraint firstItem="jaT-qD-E3E" firstAttribute="leading" secondItem="Wga-mw-Hpl" secondAttribute="leading" id="u5f-eE-IOP"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSG-Hr-HMu" userLabel="buttonView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSG-Hr-HMu" userLabel="PageViewController">
                                             <rect key="frame" x="0.0" y="240" width="414" height="60"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JT-vx-plE" userLabel="Button">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                                    <state key="normal" title="버튼"/>
+                                                    <state key="normal" title="pageViewController"/>
+                                                    <connections>
+                                                        <action selector="moveToPageViewController:" destination="-1" eventType="touchUpInside" id="skM-Gd-kVS"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,7 +127,7 @@
                                                 <constraint firstItem="2JT-vx-plE" firstAttribute="top" secondItem="NSG-Hr-HMu" secondAttribute="top" id="zaB-51-tco"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFc-Tq-kpT">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFc-Tq-kpT" userLabel="colorful View">
                                             <rect key="frame" x="0.0" y="300" width="414" height="1200"/>
                                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         </view>

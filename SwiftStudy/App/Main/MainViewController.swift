@@ -85,5 +85,19 @@ class MainViewController: UIViewController, MainDisplayLogic {
         self.navigationController?.pushViewController(page, animated: true)
 //        self.present(page, animated: false)
     }
+
+    @IBAction func moveToRxSwift(_ sender: Any) {
+        let page = RxSwiftViewController()
+        self.navigationController?.pushViewController(page, animated: true)
+    }
     
+    @IBAction func moveToTimerViewController(_ sender: Any) {
+        let page = TimerViewController()
+        self.navigationController?.pushViewController(page, animated: true)
+    }
+
+    @IBAction func moveToPageViewController(_ sender: Any) {
+        let page = PageViewController()
+        self.navigationController?.pushViewController(page, animated: false)
+    }
 }

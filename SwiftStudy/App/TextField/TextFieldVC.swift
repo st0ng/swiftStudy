@@ -17,10 +17,19 @@ class TextFieldVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNavigation()
         self.settingStyle()
         self.settingKeyboard()
         
         self.textField.delegate = self
+    }
+    
+    func setNavigation() {
+        self.navigationController?.title = "TextField"
+        self.navigationController?.isNavigationBarHidden = false
+        
+        let backBarButtonItem = UIBarButtonItem(title: "back", style: .plain, target: self, action: nil)
+        self.navigationController?.navigationItem.backBarButtonItem = backBarButtonItem
     }
     
     func settingStyle() {

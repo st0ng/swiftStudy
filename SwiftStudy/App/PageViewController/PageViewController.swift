@@ -22,6 +22,19 @@ class PageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNavigation()
+        self.setPageViewController()
+    }
+    
+    func setNavigation() {
+        self.navigationController?.title = "PageViewcontroller"
+        self.navigationController?.isNavigationBarHidden = false
+        
+        let backBarButtonItem = UIBarButtonItem(title: "back", style: .plain, target: self, action: nil)
+        self.navigationController?.navigationItem.backBarButtonItem = backBarButtonItem
+    }
+    
+    func setPageViewController() {
         if let firstPage = pageViewControllers.first {
             self.pageVC.setViewControllers([firstPage],
                                            direction: .forward,
@@ -35,7 +48,6 @@ class PageViewController: UIViewController {
         self.addChild(pageVC)
         self.view.addSubview(pageVC.view)
         self.pageVC.didMove(toParent: self)
-        
     }
 }
 
