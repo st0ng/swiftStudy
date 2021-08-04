@@ -42,7 +42,7 @@ class ScrollVC1: UIViewController {
             return
         }
         
-        self.scrollView.setContentOffset(CGPoint(x: 400 * (pageControl.currentPage), y: 0), animated: true)
+        self.scrollView.setContentOffset(CGPoint(x: Int((self.view.frame.width)) * (pageControl.currentPage), y: 0), animated: true)
     }
 }
 

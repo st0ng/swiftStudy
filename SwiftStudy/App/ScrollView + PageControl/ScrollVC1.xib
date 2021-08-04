@@ -20,35 +20,26 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-PG-HHh">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-PG-HHh">
                     <rect key="frame" x="0.0" y="44" width="414" height="400"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6J-wx-yGe" userLabel="contentView">
-                            <rect key="frame" x="0.0" y="0.0" width="1200" height="400"/>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S6J-wx-yGe" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="1242" height="400"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-f7-czA">
-                                    <rect key="frame" x="0.0" y="0.0" width="1200" height="400"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-f7-czA">
+                                    <rect key="frame" x="0.0" y="0.0" width="1242" height="400"/>
                                     <subviews>
-                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVA-Yf-iuE" userLabel="first">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVA-Yf-iuE" userLabel="first">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                                             <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="400" id="3iY-yU-7B5"/>
-                                            </constraints>
                                         </view>
-                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-fC-qyA" userLabel="second">
-                                            <rect key="frame" x="400" y="0.0" width="400" height="400"/>
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-fC-qyA" userLabel="second">
+                                            <rect key="frame" x="414" y="0.0" width="414" height="400"/>
                                             <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="400" id="7hv-ce-5th"/>
-                                            </constraints>
                                         </view>
-                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-Im-tro" userLabel="thrid">
-                                            <rect key="frame" x="800" y="0.0" width="400" height="400"/>
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-Im-tro" userLabel="thrid">
+                                            <rect key="frame" x="828" y="0.0" width="414" height="400"/>
                                             <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="400" id="ydA-VO-yuO"/>
-                                            </constraints>
                                         </view>
                                     </subviews>
                                 </stackView>
@@ -59,13 +50,11 @@
                                 <constraint firstItem="eHM-f7-czA" firstAttribute="top" secondItem="S6J-wx-yGe" secondAttribute="top" id="F18-Mx-Tiz"/>
                                 <constraint firstAttribute="trailing" secondItem="eHM-f7-czA" secondAttribute="trailing" id="aFw-8Y-VqM"/>
                                 <constraint firstAttribute="bottom" secondItem="eHM-f7-czA" secondAttribute="bottom" id="drA-GP-eFv"/>
-                                <constraint firstAttribute="width" constant="1200" id="kqv-b8-AnE"/>
                             </constraints>
                         </view>
                     </subviews>
                     <constraints>
                         <constraint firstItem="S6J-wx-yGe" firstAttribute="height" secondItem="3a3-up-EmA" secondAttribute="height" id="41v-D1-Yr3"/>
-                        <constraint firstAttribute="height" constant="400" id="Bgk-0Q-WHe"/>
                         <constraint firstItem="S6J-wx-yGe" firstAttribute="bottom" secondItem="VZa-K1-XyO" secondAttribute="bottom" id="Ew3-VB-O1V"/>
                         <constraint firstItem="S6J-wx-yGe" firstAttribute="leading" secondItem="VZa-K1-XyO" secondAttribute="leading" id="Nhi-H7-9ia"/>
                         <constraint firstItem="S6J-wx-yGe" firstAttribute="top" secondItem="VZa-K1-XyO" secondAttribute="top" id="cuY-xJ-U5U"/>
@@ -74,7 +63,7 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="VZa-K1-XyO"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="3a3-up-EmA"/>
                 </scrollView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4CY-PD-hgF">
+                <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4CY-PD-hgF">
                     <rect key="frame" x="146.5" y="454" width="121.5" height="27.5"/>
                     <connections>
                         <action selector="onClickPageControl:" destination="-1" eventType="valueChanged" id="OGw-Yi-NM0"/>
@@ -86,7 +75,11 @@
             <constraints>
                 <constraint firstItem="4CY-PD-hgF" firstAttribute="top" secondItem="ZqE-PG-HHh" secondAttribute="bottom" constant="10" id="7aI-mV-Z8c"/>
                 <constraint firstItem="4CY-PD-hgF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7qY-eb-1hI"/>
+                <constraint firstItem="S6J-wx-yGe" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="3" id="VT5-cb-xBG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZqE-PG-HHh" secondAttribute="trailing" id="W2k-G3-wDb"/>
+                <constraint firstItem="bVA-Yf-iuE" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="v4E-ln-UF4"/>
+                <constraint firstItem="cdy-Im-tro" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="vEy-ws-eTc"/>
+                <constraint firstItem="Hio-fC-qyA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="w2D-Tx-eb0"/>
                 <constraint firstItem="ZqE-PG-HHh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xg0-eD-crF"/>
                 <constraint firstItem="ZqE-PG-HHh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zHO-lr-HfG"/>
             </constraints>

@@ -31,6 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // 윈도우 씬 설정
         window?.windowScene = windowScene
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
