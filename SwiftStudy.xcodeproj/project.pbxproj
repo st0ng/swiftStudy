@@ -267,7 +267,7 @@
 				AA29E6EF26B700410022B4ED /* CheckInternet */,
 				AA16C6E126A056A900D4BF84 /* PageViewController + PageControl */,
 				AAA8D56026B2DF9200545223 /* RxSwift + CleanSwift */,
-				AACB716D268B4A8B00CADF6B /* ScrollView + PageControl */,
+				AACB716D268B4A8B00CADF6B /* ScrollView+PageControl */,
 				AA6F3E412678D3AA002FEA50 /* TextField */,
 				AA29E6EA26B6E1880022B4ED /* Timer */,
 				AACB7177268B6D1A00CADF6B /* Util */,
@@ -298,7 +298,7 @@
 			path = "RxSwift + CleanSwift";
 			sourceTree = "<group>";
 		};
-		AACB716D268B4A8B00CADF6B /* ScrollView + PageControl */ = {
+		AACB716D268B4A8B00CADF6B /* ScrollView+PageControl */ = {
 			isa = PBXGroup;
 			children = (
 				AACB716F268B4FBC00CADF6B /* ScrollVC1.swift */,
@@ -306,7 +306,7 @@
 				AACB7173268B5A6800CADF6B /* ScrollVC2.swift */,
 				AACB7174268B5A6800CADF6B /* ScrollVC2.xib */,
 			);
-			path = "ScrollView + PageControl";
+			path = "ScrollView+PageControl";
 			sourceTree = "<group>";
 		};
 		AACB7177268B6D1A00CADF6B /* Util */ = {

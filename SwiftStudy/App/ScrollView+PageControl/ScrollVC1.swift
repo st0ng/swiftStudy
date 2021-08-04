@@ -24,7 +24,12 @@ class ScrollVC1: UIViewController {
         self.setNavigation()
         self.scrollView.delegate = self
         
+        
+        // 페이징 처리
+        self.scrollView.isPagingEnabled = true
+        // init 할 때 현재 페이지
         self.pageControl.currentPage = 0
+        // 전체 페이지 수
         self.pageControl.numberOfPages = 3
         
     }

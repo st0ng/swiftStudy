@@ -20,24 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-PG-HHh">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-PG-HHh">
                     <rect key="frame" x="0.0" y="44" width="414" height="400"/>
                     <subviews>
-                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S6J-wx-yGe" userLabel="Content View">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6J-wx-yGe" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="1242" height="400"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-f7-czA">
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-f7-czA">
                                     <rect key="frame" x="0.0" y="0.0" width="1242" height="400"/>
                                     <subviews>
-                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVA-Yf-iuE" userLabel="first">
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVA-Yf-iuE" userLabel="first">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                                             <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         </view>
-                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-fC-qyA" userLabel="second">
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-fC-qyA" userLabel="second">
                                             <rect key="frame" x="414" y="0.0" width="414" height="400"/>
                                             <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         </view>
-                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-Im-tro" userLabel="thrid">
+                                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-Im-tro" userLabel="thrid">
                                             <rect key="frame" x="828" y="0.0" width="414" height="400"/>
                                             <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         </view>
@@ -50,6 +50,7 @@
                                 <constraint firstItem="eHM-f7-czA" firstAttribute="top" secondItem="S6J-wx-yGe" secondAttribute="top" id="F18-Mx-Tiz"/>
                                 <constraint firstAttribute="trailing" secondItem="eHM-f7-czA" secondAttribute="trailing" id="aFw-8Y-VqM"/>
                                 <constraint firstAttribute="bottom" secondItem="eHM-f7-czA" secondAttribute="bottom" id="drA-GP-eFv"/>
+                                <constraint firstAttribute="height" constant="400" id="mTj-WD-web"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -63,7 +64,7 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="VZa-K1-XyO"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="3a3-up-EmA"/>
                 </scrollView>
-                <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4CY-PD-hgF">
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4CY-PD-hgF">
                     <rect key="frame" x="146.5" y="454" width="121.5" height="27.5"/>
                     <connections>
                         <action selector="onClickPageControl:" destination="-1" eventType="valueChanged" id="OGw-Yi-NM0"/>
