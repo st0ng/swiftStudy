@@ -25,9 +25,6 @@ class RxSwiftViewController: UIViewController, RxSwiftDisplayLogic {
     
     @IBOutlet weak var outputLB: UILabel!
     
-    
-    
-    
     // MARK: Object lifecycle
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -87,8 +84,7 @@ class RxSwiftViewController: UIViewController, RxSwiftDisplayLogic {
         interactor?.doSomething(request: request)
     }
     
-    func displaySomething(viewModel: RxSwift.Something.ViewModel)
-    {
+    func displaySomething(viewModel: RxSwift.Something.ViewModel) {
         
     }
 }

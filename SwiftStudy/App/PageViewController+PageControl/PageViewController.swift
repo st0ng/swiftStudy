@@ -12,6 +12,7 @@ class PageViewController: UIViewController {
     var pageVC = UIPageViewController(transitionStyle: .scroll,
                                       navigationOrientation: .horizontal,
                                       options: nil)
+    
     var pageViewControllers: [UIViewController] {
         let page1 = FirstPageVC()
         let page2 = SecondPageVC()

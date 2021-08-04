@@ -12,18 +12,15 @@
 
 import UIKit
 
-@objc protocol RxSwiftRoutingLogic
-{
+@objc protocol RxSwiftRoutingLogic {
   //func routeToSomewhere(segue: UIStoryboardSegue?)
 }
 
-protocol RxSwiftDataPassing
-{
+protocol RxSwiftDataPassing {
   var dataStore: RxSwiftDataStore? { get }
 }
 
-class RxSwiftRouter: NSObject, RxSwiftRoutingLogic, RxSwiftDataPassing
-{
+class RxSwiftRouter: NSObject, RxSwiftRoutingLogic, RxSwiftDataPassing {
   weak var viewController: RxSwiftViewController?
   var dataStore: RxSwiftDataStore?
   

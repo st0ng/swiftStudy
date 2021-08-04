@@ -100,4 +100,13 @@ class MainViewController: UIViewController, MainDisplayLogic {
         let page = PageViewController()
         self.navigationController?.pushViewController(page, animated: false)
     }
+    @IBAction func moveToPageStretchHeaderView(_ sender: Any) {
+        let page = StretchCollectionViewVC()
+        self.navigationController?.pushViewController(page, animated: false)
+    }
+    
+    @IBAction func moveToStretchScrollView(_ sender: Any) {
+        let page = StretchScrollView()
+        self.navigationController?.pushViewController(page, animated: false)
+    }
 }

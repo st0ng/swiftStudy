@@ -8,6 +8,10 @@ target 'SwiftStudy' do
 
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'SDWebImage'
+pod 'SwiftyJSON'
+pod 'SnapKit'
+pod 'Alamofire'
 
   # Pods for SwiftStudy
 

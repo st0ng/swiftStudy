@@ -12,19 +12,16 @@
 
 import UIKit
 
-protocol RxSwiftPresentationLogic
-{
+protocol RxSwiftPresentationLogic {
   func presentSomething(response: RxSwift.Something.Response)
 }
 
-class RxSwiftPresenter: RxSwiftPresentationLogic
-{
+class RxSwiftPresenter: RxSwiftPresentationLogic {
   weak var viewController: RxSwiftDisplayLogic?
   
   // MARK: Do something
   
-  func presentSomething(response: RxSwift.Something.Response)
-  {
+    func presentSomething(response: RxSwift.Something.Response) {
     let viewModel = RxSwift.Something.ViewModel()
     viewController?.displaySomething(viewModel: viewModel)
   }
